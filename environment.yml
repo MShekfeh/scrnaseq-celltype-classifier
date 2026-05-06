@@ -1,0 +1,21 @@
+cat > environment.yml << 'EOF'
+name: genomics-ml
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    - scanpy
+    - anndata
+    - matplotlib
+    - seaborn
+    - scikit-learn
+    - xgboost
+    - lightgbm
+    - umap-learn
+    - torch
+    - jupyter
+    - ipykernel
+EOF
